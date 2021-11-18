@@ -24,8 +24,6 @@ local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local gui = script.Parent
 
-local groupID = 12525963
-if plr:IsInGroup(groupID) then
 
     game.StarterGui:SetCore("SendNotification", {
     Title = "Welcome";
@@ -1170,15 +1168,3 @@ print("Script loaded = true")
 print("Whitelisted = true")
 print(message,getuser)
 
-else
-    game.StarterGui:SetCore("SendNotification", {
-    Title = "Serpent X";
-    Text = "Failed";
-    Duration = 10;
-    wait(3)
-})
-warn("Whitelisted = false")
-warn("Script loaded = false")
-game.Players.LocalPlayer:Kick("You're not whitelisted dm pdsc#6074 & so1ar#0001 to buy!!!")
-
-end
